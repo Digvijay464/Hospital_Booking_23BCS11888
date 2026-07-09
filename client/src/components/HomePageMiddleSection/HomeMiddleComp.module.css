@@ -1,0 +1,77 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* :root{
+    --bodyColor:#1a202c;
+}
+body{
+    background-color: var(--bodyColor);
+} */
+
+/* -------------Typing animation------------- */
+
+.typingAnimation {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.typing::before {
+    content: '';
+    position: absolute;
+    border-right: 2px solid orange;
+    left: 0;
+    top: 10;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    animation: typing 5s steps(20) infinite;
+}
+
+@keyframes typing {
+
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 105%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+.typing {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 0.5rem;
+    width: 0;
+    animation: typing-text 5s steps(20) infinite;
+}
+
+@keyframes typing-text {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 105%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+/* --------------------------------------- */
+.doctorImage {
+    width: 40%;
+}
+
+.doctorImage2 {
+    width: 100%;
+}

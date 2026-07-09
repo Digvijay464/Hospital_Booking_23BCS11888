@@ -1,0 +1,47 @@
+body{
+    position: relative;
+}
+
+.navbarContainer{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid silver;
+}
+
+.navBtn {
+    margin-left: 40%;
+    /* background-color: rgb(218, 230, 230); */
+    display: none;
+}
+
+.navBtnChild {
+    cursor: pointer;
+    border-radius: 10px;
+    /* background-color: rgb(208, 248, 244); */
+}
+.signin{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(255, 56, 139);
+    color: aliceblue;
+}
+.signin:hover{
+    color: rgb(18, 22, 24);
+}
+
+.logo{
+    width: 90px;
+}
+
+@media screen and (min-width:477) and (max-width:800px) {
+    .logo{
+        width: 65px;
+    }
+}
+@media screen and (max-width:476px) {
+    .logo{
+        width: 60px;
+    }
+}
